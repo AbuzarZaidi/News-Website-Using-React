@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       {/* <!-- header inner --> */}
-      <div className="head_top">
+      <div className="head_top fixed-top">
         <div className="header">
           <div className="container-fluid">
             <div className="row">
@@ -67,7 +67,7 @@ const Header = () => {
         {/* <!-- end header inner -->
            <!-- end header -->
            <!-- banner --> */}
-        <section className="banner_main">
+        {/* <section className="banner_main">
           <div className="container">
             <div className="row d_flex">
               <div className=" col-xl-8 col-lg-8 col-md-8 col-12-9">
@@ -94,7 +94,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </header>
   );

@@ -166,7 +166,8 @@ ul.like li img {
         margin-top: -45px;
     }
     .navigation .navbar-collapse {
-        background: #02fee5;
+        
+        background: #1c423f;
         padding: 20px;
         margin-top: 46px;
         position: absolute;
@@ -176,7 +177,7 @@ ul.like li img {
     }
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
-        color: #000;    
+        color: #fff;    
     }
     .navigation.navbar-dark .navbar-toggler {
         float: right;
