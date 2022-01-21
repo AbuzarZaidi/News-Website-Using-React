@@ -1,13 +1,14 @@
 // import './App.css';
 import Header from './components/Header'
-import ContactUs from "./components/ContactUs";
+// import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
-
+import NewsPage from './components/NewsPage'
 function App() {
   return (
     <>
     <Header/>
-    <ContactUs/>
+    {/* <ContactUs/> */}
+    <NewsPage/>
     <Footer/>
     </>
   );

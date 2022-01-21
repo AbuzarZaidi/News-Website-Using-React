@@ -1,0 +1,12 @@
+.padding_flot{
+    padding-bottom:0; 
+     display: inline-block; 
+     /* float: left; */
+     
+     font-size: 20px;
+     padding-right: 14px;
+}
+
+.three_box {padding: 20px 20px; box-shadow: #ddd 0px 0px 10px 0px;}
+.three_box p {padding-bottom: 0; padding-top: 15px;}
+ul.padding_left2 li img {padding: 0px 10px 0px 30px;}
