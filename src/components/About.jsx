@@ -7,6 +7,7 @@ import Vision from "./AboutPart/Vision";
 const About = () => {
   return (
     <>
+    
     <div className="blog_main">
         <div className="container">
           <div className="row">
