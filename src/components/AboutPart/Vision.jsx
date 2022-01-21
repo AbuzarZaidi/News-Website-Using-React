@@ -17,7 +17,7 @@ const vision = () => {
                 <div className="our_text_box position_box centered ">
                 
                    <h3 className="awesome withi_color" style={{color:"#fff"}}>This week is incelebrity homes  love food </h3>
-                   <p className="hiuouh">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repea</p>
+                   <p className="hiuouh"  style={{color:"#fff"}}>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repea</p>
                    {/* <div className="post_box">
                       <h4 className="flot_left1 withi_color">Post By : Blogger </h4>
                       <ul className="like withi_color">
