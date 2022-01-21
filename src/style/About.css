@@ -1,0 +1,14 @@
+
+.blog_main {margin-top: 105px;}
+.blog_main .span {font-size: 17px; line-height: 20px; color: #fff;}
+.our_two_box {box-shadow: #ddd 0px 0px 10px 0px; margin-bottom: 90px;}
+.our_text_box {padding: 1px 30px 1px 1px;}
+.our_img figure {margin: 0;}
+.our_img figure img {width: 100%;}
+.awesome {padding-bottom:40px; font-size: 26px; line-height: 38px; color:#333334; } 
+.our_text_box p {padding-bottom: 50px; color: #3c3c3c; display: inline-block; } 
+.flot_left1 {float: left; padding: 0;} 
+ul.like {float: right;}
+ul.like li {display: inline-block;}
+ul.like li a {display: inline-block; color: #3c3c3c;}
+ul.like li img {padding: 0px 10px 0px 40px;}

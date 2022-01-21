@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../style/NewsPage.css";
+import '../style/responsive.css'
 import SingleNews from "../components/SingleNews";
 import Spinner from './Spinner'
 import InfiniteScroll from "react-infinite-scroll-component";
