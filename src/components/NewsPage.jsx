@@ -3,8 +3,6 @@ import "../style/NewsPage.css";
 import SingleNews from "../components/SingleNews";
 import Spinner from './Spinner'
 import InfiniteScroll from "react-infinite-scroll-component";
-import img4 from "../images/our_img4.jpg";
-import img3 from "../images/our_img3.jpg";
 const NewsPage = () => {
   const [article, setArticle] = useState([]);
    const[loading,setLoading]=useState(true);
@@ -92,7 +90,7 @@ const fetchMoreData = async () => {
                   heading={val.title?val.title:""}
                   detail={val.description?val.description:""}
                   author={val.author?val.author:""}
-                  img={val.urlToImage?val.urlToImage:""}
+                  img={val.urlToImage?val.urlToImage:"https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg"}
                 />
               </div>
             ))}

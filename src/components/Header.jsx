@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../style/Header.css";
 import "../style/responsive.css";
 import logo from "../images/logo.png";
@@ -16,9 +17,11 @@ const Header = () => {
                 <div className="full">
                   <div className="center-desk">
                     <div className="logo">
-                      <a href="index.html">
+                      {/* <a href="index.html">
                         <img src={logo} alt="Logo" />
-                      </a>
+                      </a> */}
+                      <Link to="/"><img src={logo} alt="Logo" /></Link>
+
                     </div>
                   </div>
                 </div>
@@ -42,20 +45,27 @@ const Header = () => {
                   >
                     <ul className="navbar-nav mr-auto">
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        {/* <a className="nav-link" href="#">
                           {" "}
                           Home{" "}
-                        </a>
+                        </a> */}
+                        <Link className="nav-link" to='/'>{" "}
+                          Home{" "}</Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#contact">
+                      <Link className="nav-link" to='news'>News</Link>
+                        {/* <a className="nav-link" href="#contact">
                           News
-                        </a>
+                        </a> */}
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                      <Link className="nav-link" to='about'>About Us</Link>
+                      </li>
+                      <li className="nav-item">
+                      <Link className="nav-link" to='contact'>Contact Us</Link>
+                        {/* <a className="nav-link" href="#">
                           Contact
-                        </a>
+                        </a> */}
                       </li>
                     </ul>
                   </div>
