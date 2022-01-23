@@ -66,11 +66,8 @@ const fetchMoreData = async () => {
           <div className="row">
             <div className="col-md-12">
               <div className="titlepage">
-                <h2>Our Blogs</h2>
-                <span>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page{" "}
-                </span>
+                <h2>Latest News</h2>
+                
               </div>
             </div>
           </div>
@@ -83,7 +80,8 @@ const fetchMoreData = async () => {
                     next={fetchMoreData}
                     hasMore={article.length !== totalResults}
                     loader={<Spinner/>}
-                > 
+                >
+                  <div className="container">
           <div className="row">
             {article.map((val) => (
               <div className="col-4 mb-4">
@@ -96,6 +94,7 @@ const fetchMoreData = async () => {
                 />
               </div>
             ))}
+            </div>
           </div>
           </InfiniteScroll>
           {/* <div className="container d-flex justify-content-between">

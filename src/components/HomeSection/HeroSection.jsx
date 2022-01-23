@@ -62,13 +62,17 @@ img={"https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image
         <div class=" col-lg-4 ">
           <div className="row">
             {/* <HeroRightSection title={title2} img={img2}/> */}
-            <HeroRightSection title={"hello world"} 
-img={"https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg"}/>
+            <HeroRightSection title={"UK warns Russia will face severe sanctions if it installs Ukraine 'puppet regime' - Reuters"} 
+img={"https://www.reuters.com/resizer/YcdvGq_U99jDj52yD9TStHDvgvU=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/34J3IBZANNOMRBC2RQLGBK7UXE.jpg"}
+url={"https://www.reuters.com/world/europe/russia-faces-severe-sanctions-if-it-installs-puppet-regime-ukraine-uk-minister-2022-01-23/"}
+/>
           </div>
           <div className="row">
             {/* <HeroRightSection title={title3} img={img3}/> */}
-            <HeroRightSection title={"hello world"} 
-img={"https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg"}/>
+            <HeroRightSection title={ "A Houston-area deputy who trained and mentored others was killed during a traffic stop, constable says - CNN"} 
+img={"https://cdn.cnn.com/cnnnext/dam/assets/220123091822-houston-deputy-shot-charles-galloway-super-tease.jpg"}
+url={"https://www.cnn.com/2022/01/23/us/texas-deputy-killed-traffic-stop/index.html"}
+/>
           </div>
         </div>
       </div>
