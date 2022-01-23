@@ -91,6 +91,7 @@ const fetchMoreData = async () => {
                   heading={val.title?val.title:""}
                   detail={val.description?val.description:""}
                   author={val.author?val.author:""}
+                  url={val.url?val.url:"www.google.com"}
                   img={val.urlToImage?val.urlToImage:"https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg"}
                 />
               </div>
