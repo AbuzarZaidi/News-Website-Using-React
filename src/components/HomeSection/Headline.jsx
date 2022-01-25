@@ -38,11 +38,11 @@ content: "Aaron Rodgers’ future is up in the air after Saturday night, both fo
         <div className="row">
         {topHeadline.map((val) => (
             
-            <div class="card m-2"  style={{width: "18rem",borderRadius:"20px"}}>
-            <img src={val.img} class="card-img-top" alt="..." style={{borderRadius:"20px"}}/>
-            <div class="card-body">
+            <div key={val.url} className="card m-2"  style={{width: "18rem",borderRadius:"20px"}}>
+            <img src={val.img} className="card-img-top" alt="..." style={{borderRadius:"20px"}}/>
+            <div className="card-body">
               <a href={val.url}>
-              <h2 class="card-title">{val.title}</h2>
+              <h2 className="card-title">{val.title}</h2>
               </a>
             </div>
             

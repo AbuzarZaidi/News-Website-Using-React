@@ -4,7 +4,7 @@ import '../style/responsive.css'
 import SingleNews from "../components/SingleNews";
 import Spinner from './Spinner'
 import InfiniteScroll from "react-infinite-scroll-component";
-const NewsPage = () => {
+const NewsPage = (props) => {
   const [article, setArticle] = useState([]);
    const[loading,setLoading]=useState(true);
   const [page, setPage] = useState(1);
@@ -14,7 +14,7 @@ const NewsPage = () => {
 }
   const updateFunction = async () => {
     const link =
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=ce9c68716fc14e71bed05858206454e0&page=${page}`
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${props.apiKey}&page=${page}`
    // const link=`https://newsapi.org/v2/everything?q=tesla&from=2021-12-21&sortBy=publishedAt&apiKey=ce9c68716fc14e71bed05858206454e0&page=${page+1}
    // `
     let data = await fetch(link);
@@ -47,8 +47,7 @@ const NewsPage = () => {
 // }
 const fetchMoreData = async () => {   
    const link =`https://newsapi.org/v2/top-headlines?country=us&apiKey=ce9c68716fc14e71bed05858206454e0&page=${page+1}`
-   // const link=`https://newsapi.org/v2/everything?q=tesla&from=2021-12-21&sortBy=publishedAt&apiKey=ce9c68716fc14e71bed05858206454e0&page=${page+1}
-   // `
+
    setPage(page+1) 
    let data = await fetch(link);
    let parseData = await data.json()

@@ -1,5 +1,4 @@
 import React from 'react';
-import img1 from '../../images/our_img1.jpg';
 import '../../style/HeroSection.css'
  import '../../style/responsive.css'
 const HeroRightSection = ({title,img,url}) => {

@@ -6,12 +6,10 @@ const vision = () => {
   return (
     <div className="row">
       <div className="col-md-12">
-        <div >
-        {/* <div className="our_two_box"> */}
+        <div>
           <div className="row">
             <div className="col-md-12 container">
-              <div >
-              {/* <div className="our_img"> */}
+              <div>
                 <figure>
                   <img className="he_img " src={img2} alt="#" />
                 </figure>

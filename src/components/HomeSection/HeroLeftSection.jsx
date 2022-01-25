@@ -1,9 +1,8 @@
 // import React, { useState, useEffect } from "react";
 import "../../style/HeroSection.css";
-// import img3 from '../../images/our_img3.jpg';
 import "../../style/responsive.css";
 const HeroLeftSection = ({ title, img}) => {
-  console.log(title);
+  // console.log(title);
 
   return (
     <div>

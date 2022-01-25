@@ -51,15 +51,15 @@ const HeroSection = () => {
     {/* {!load && <Spinner />} */}
   {/* {load&& <div className="container"> */}
  <div className="container">
-      <div class="row">
-        <div class=" col-lg-8 ">
+      <div className="row">
+        <div className=" col-lg-8 ">
           
 {/* <HeroLeftSection title={title1} img={img1}/> */}
 <HeroLeftSection title={"hello world"} 
 img={"https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg"}/>
       
         </div>
-        <div class=" col-lg-4 ">
+        <div className=" col-lg-4 ">
           <div className="row">
             {/* <HeroRightSection title={title2} img={img2}/> */}
             <HeroRightSection title={"UK warns Russia will face severe sanctions if it installs Ukraine 'puppet regime' - Reuters"} 

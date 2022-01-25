@@ -6,7 +6,10 @@ import About from "./components/About";
  import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import NewsPage from './components/NewsPage'
-function App() {
+const App=()=>{
+  
+  const apikey=process.env.REACT_APP_KEY;
+console.log(apikey)
   return (
     <>
     <Header/>
@@ -14,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<ContactUs />} />
-        <Route path="news" element={<NewsPage />} />
+        <Route path="news" element={<NewsPage  apiKey={apikey}/>} />
       </Routes>
     
     <Footer/>
