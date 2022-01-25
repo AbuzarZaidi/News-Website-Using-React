@@ -85,7 +85,7 @@
     width: 100%;
 }
 
-/* hell */
+/* responsive */
 
 @media (min-width: 1200px) and (max-width: 1500px) {
    
@@ -119,9 +119,6 @@ line-height: 25px;}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .head_top {
-        background: url(../images/banner.png);
-    }
     .mean-container .mean-bar {
         margin-top: 0px;
     }
@@ -187,9 +184,7 @@ ul.padding_left2 li img {padding: 0px 10px 0px 19px;}
 }
 
 @media (max-width: 575px) {
-    .head_top {
-       background: url(../images/banner.png);
-    }
+    
     .header {
         padding: 30px 0px 0px 0px;
     }

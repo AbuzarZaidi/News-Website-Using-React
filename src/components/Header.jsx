@@ -3,12 +3,9 @@ import { Link } from "react-router-dom";
 import "../style/Header.css";
 import "../style/responsive.css";
 import logo from "../images/logo.png";
-import box_img from "../images/box_img.png";
-// import background from "../images/back.jpg";
 const Header = () => {
   return (
     <header>
-      {/* <!-- header inner --> */}
       <div className="head_top fixed-top">
         <div className="header">
           <div className="container-fluid">
@@ -17,11 +14,9 @@ const Header = () => {
                 <div className="full">
                   <div className="center-desk">
                     <div className="logo">
-                      {/* <a href="index.html">
+                      <Link to="/">
                         <img src={logo} alt="Logo" />
-                      </a> */}
-                      <Link to="/"><img src={logo} alt="Logo" /></Link>
-
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -45,27 +40,79 @@ const Header = () => {
                   >
                     <ul className="navbar-nav mr-auto">
                       <li className="nav-item">
-                        {/* <a className="nav-link" href="#">
+                        <Link className="nav-link" to="/">
                           {" "}
                           Home{" "}
-                        </a> */}
-                        <Link className="nav-link" to='/'>{" "}
-                          Home{" "}</Link>
+                        </Link>
                       </li>
-                      <li className="nav-item">
-                      <Link className="nav-link" to='news'>News</Link>
-                        {/* <a className="nav-link" href="#contact">
+
+                      <li className="nav-item dropdown">
+                        <Link
+                          className="nav-link dropdown-toggle"
+                          to="news"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
                           News
-                        </a> */}
+                        </Link>
+
+                        <ul
+                          className="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <li>
+                            <Link className="dropdown-item" to="/general">
+                              General
+                            </Link>
+                          </li>
+                          <li>
+                            <hr className="dropdown-divider" />
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="/business">
+                              Business
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="/entertainment">
+                              Entertainment
+                            </Link>
+                          </li>
+
+                          <li>
+                            <Link className="dropdown-item" to="/health">
+                              Health
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="/science">
+                              Science
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="/sports">
+                              Sports
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className="dropdown-item" to="/technology">
+                              Technology
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li className="nav-item">
+                        <Link className="nav-link" to="about">
+                          About Us
+                        </Link>
                       </li>
                       <li className="nav-item">
-                      <Link className="nav-link" to='about'>About Us</Link>
-                      </li>
-                      <li className="nav-item">
-                      <Link className="nav-link" to='contact'>Contact Us</Link>
-                        {/* <a className="nav-link" href="#">
-                          Contact
-                        </a> */}
+                        <Link className="nav-link" to="contact">
+                          Contact Us
+                        </Link>
                       </li>
                     </ul>
                   </div>
