@@ -14,7 +14,7 @@ const HeroSection = () => {
 //   const[img3,setImg3]=useState("");
 //   const[load,setLoad]=useState(false);
 //   const updateFunction = async () => {
-//     const link =`https://newsapi.org/v2/top-headlines?country=us&apiKey=ce9c68716fc14e71bed05858206454e0`
+//     const link =process.env.REACT_APP_KEY
     
    
 //     let data = await fetch(link);
