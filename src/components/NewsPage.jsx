@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import "../style/NewsPage.css";
 import "../style/responsive.css";
 import SingleNews from "../components/SingleNews";
@@ -12,7 +12,7 @@ const NewsPage = (props) => {
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
-  const updateFunction = async () => {
+  const updateFunction =async () => {
     const link = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apiKey}&page=${page}`;
     let data = await fetch(link);
     let parseData = await data.json();
@@ -22,9 +22,9 @@ const NewsPage = (props) => {
   };
   useEffect(() => {
     
-    document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
+    // document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
     updateFunction();
-  }, []);
+  }, [updateFunction]);
   const fetchMoreData = async () => {
     const link = `https://newsapi.org/v2/top-headlines?country=us&apiKey=ce9c68716fc14e71bed05858206454e0&page=${
       page + 1
