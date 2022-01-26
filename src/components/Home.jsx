@@ -18,7 +18,6 @@ const Home = (props) => {
     let i;
     for (i = 0; i < 3; i++) {
       temp.push(parseData.articles[i]);
-      console.log(temp);
     }
     setHeroNews(temp);
     temp = [];
@@ -32,7 +31,7 @@ const Home = (props) => {
     }
     setHeadLineNews(temp);
     setLoad(false);
-  }, []);
+  }, [props.apiKey]);
   useEffect(() => {
     getNewsFunction();
   }, [getNewsFunction]);

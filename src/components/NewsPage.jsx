@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect,useCallback} from "react";
 import "../style/NewsPage.css";
 import "../style/responsive.css";
 import SingleNews from "../components/SingleNews";
@@ -12,14 +12,14 @@ const NewsPage = (props) => {
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
-  const updateFunction =async () => {
+  const updateFunction =useCallback(async () => {
     const link = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apiKey}&page=${page}`;
     let data = await fetch(link);
     let parseData = await data.json();
     setArticle(parseData.articles);
     setTotalResults(parseData.totalResults);
     setLoading(false);
-  };
+  },[props.apiKey,props.category,page,])
   useEffect(() => {
     
     // document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
@@ -44,7 +44,6 @@ const NewsPage = (props) => {
           <div className="row">
             <div className="col-md-12">
               <div className="titlepage">
-                {/* <h2>Latest News</h2> */}
                 <h2> Top {capitalizeFirstLetter(props.category)} Headlines</h2>
               </div>
             </div>
